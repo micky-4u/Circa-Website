@@ -1,0 +1,28 @@
+.member{
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    object-fit: contain;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.member .member-img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+.member .member-img img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+.member p{
+    margin: 0;
+}
+
+.member h3{
+    width: 150px;
+    text-align: center;
+}

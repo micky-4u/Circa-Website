@@ -48,3 +48,17 @@
     margin-bottom: 20px;
     word-spacing: 10px;
 }
+
+
+
+/* teams page */
+
+.teammembers{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 200px;
+    justify-content: center;
+    width: 100%;
+    gap: 200px;
+}
