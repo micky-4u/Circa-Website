@@ -1,0 +1,27 @@
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    margin-top: 20px;
+}
+
+.header ul{
+    display: flex;
+    width: 60%;
+    gap: 40px;
+
+}
+
+.header ul li{
+    list-style: none;
+    cursor: pointer;
+}
+
+.header .user-reactions{
+    display: flex;
+    gap: 30px;
+}
