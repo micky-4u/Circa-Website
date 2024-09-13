@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import Home from './pages/home';
+// import Home from './pages/home';
 import Teams from './pages/teams';
 import Header from './components/header/header';
 
