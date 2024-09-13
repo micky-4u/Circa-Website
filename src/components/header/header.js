@@ -1,18 +1,36 @@
 import React from 'react'
+import { useState } from 'react'
 import "./header.css"
+import logo from "../../assets/images/logo.png"
+
 
 function Header() {
+
+  const [checked, setChecked] = useState('')
+
+  const handleMenu = (item) =>{
+    setChecked(item)
+  }
+
+  const items = ["Home","Projects","Team","Contact us"]
   return (
     <div className='header'>
         <div className='logo-area'>
-            <img src='' alt='logo' />
+            <img src={logo} alt='logo1' />
         </div>
 
         <ul>
-            <li>Home</li>
-            <li>Projects</li>
-            <li>Team</li>
-            <li>Contact us</li>
+          {items.map((item)=>(
+            <li 
+              key={item}
+              onClick={() =>handleMenu(item)}
+              className={checked===item?"active-menu":"none"}
+            >{item}</li>
+          ))}
+            {/* <li onClick={handleMenu} className={checked?"active-menu":"none"}>Home</li>
+            <li onClick={handleMenu} className={checked?"active-menu":"none"}>Projects</li>
+            <li onClick={handleMenu} className={checked?"active-menu":"none"}>Team</li>
+            <li onClick={handleMenu} className={checked?"active-menu":"none"}>Contact us</li> */}
         </ul>
 
         <div className='user-reactions'>

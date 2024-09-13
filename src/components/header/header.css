@@ -19,9 +19,31 @@
 .header ul li{
     list-style: none;
     cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.header ul li:hover{
+    color: #05cfde;
+    transition: 0.3s ease;
 }
 
 .header .user-reactions{
     display: flex;
     gap: 30px;
+}
+
+.header .logo-area{
+    position: relative;
+    width: 200px;
+    height: 40px;
+}
+
+.header .logo-area img{
+    object-fit: contain;
+    height: 100%;
+    width: 100%;
+}
+
+.active-menu{
+    color: #05cfde;
 }
