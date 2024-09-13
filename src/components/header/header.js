@@ -10,6 +10,7 @@ function Header() {
 
   const handleMenu = (item) =>{
     setChecked(item)
+    
   }
 
   const items = ["Home","Projects","Team","Contact us"]
