@@ -30,7 +30,7 @@
 }
 
 .contacts{
-    height: 80vh;
+    height: 100vh;
     align-items: flex-start;
     justify-content: center;
 }
@@ -47,9 +47,12 @@
 .contacts form .input-area{
     display: flex;
     border: 1px solid #000;
-    width: 350px;
+    width: 340px;
     height: 40px;
     border-radius: 5px;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
     
 }
 
@@ -58,6 +61,7 @@
     height: 100px;
     padding: 10px;
     border: 1px solid #000;
+
     
 }
 
