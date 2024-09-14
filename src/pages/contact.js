@@ -2,7 +2,7 @@ import React from 'react'
 
 function Contact() {
   return (
-    <div className='contacts'>
+    <div id="Contact us"className='contacts'>
         <form method='post'>
             <div className='input-area'>
             <box-icon type='solid' name='user'></box-icon>
