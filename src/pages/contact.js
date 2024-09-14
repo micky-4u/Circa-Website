@@ -2,7 +2,7 @@ import React from 'react'
 
 function Contact() {
   return (
-    <div id="Contact us"className='contacts'>
+    <section id="Contact us"className='contacts'>
         <form method='post'>
             <div className='input-area'>
             <box-icon type='solid' name='user'></box-icon>
@@ -17,7 +17,7 @@ function Contact() {
             </div>
         </form>
 
-    </div>
+    </section>
   )
 }
 

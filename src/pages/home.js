@@ -3,7 +3,7 @@ import Button from '../components/button/button'
 import overlay from '../assets/images/overlay.png'
 function Home() {
   return (
-    <div id="Home" className='home'>
+    <section id="Home" className='home'>
         <div className='overlay'>
             <img src={overlay} alt='overlay' />
         </div>
@@ -20,7 +20,7 @@ function Home() {
         <Button label="EXPLORE circa"/>
         
 
-    </div>
+    </section>
   )
 }
 

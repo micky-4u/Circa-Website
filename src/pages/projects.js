@@ -5,7 +5,7 @@ import overlay from '../assets/images/overlay.png'
 
 function Projects() {
   return (
-    <div id="Projects" className='home projects'>
+    <section id="Projects" className='home projects'>
                 <div className='overlay'>
             <img src={overlay} alt='overlay' />
         </div>
@@ -18,7 +18,7 @@ function Projects() {
         <Button label="EXPLORE  e-qual"/>
         
 
-    </div>
+    </section>
   )
 }
 

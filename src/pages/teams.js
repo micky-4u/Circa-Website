@@ -49,7 +49,7 @@ function Teams() {
   ]
 
   return (
-    <div id="Team" className='teams'>
+    <section id="Team" className='teams'>
       <div className='overlay'>
             <img src={overlay} alt='overlay' />
         </div>
@@ -60,7 +60,7 @@ function Teams() {
           <Member name={member.name} role={member.role} image={member.image} />
         ))}
       </div>
-    </div>
+    </section>
   )
 }
 
