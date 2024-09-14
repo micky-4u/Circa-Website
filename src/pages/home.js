@@ -1,12 +1,9 @@
 import React from 'react'
-import Header from '../components/header/header'
 import Button from '../components/button/button'
 import overlay from '../assets/images/overlay.png'
 function Home() {
   return (
-    <div className='home'>
-        <Header />
-
+    <div id="Home" className='home'>
         <div className='overlay'>
             <img src={overlay} alt='overlay' />
         </div>

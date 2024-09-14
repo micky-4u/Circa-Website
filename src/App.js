@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
 import './App.css';
-// import Home from './pages/home';
+import Home from './pages/home';
 import Teams from './pages/teams';
 import Header from './components/header/header';
+import Projects from './pages/projects';
+import Contact from './pages/contact';
 
 
 
@@ -11,8 +13,10 @@ class App extends Component {
     return (
       <div className="App">
         <Header />
-        {/* <Home /> */}
+        <Home />
+        <Projects />
         <Teams />
+        <Contact />
       </div>
     );
   }

@@ -6,7 +6,7 @@ import logo from "../../assets/images/logo.png"
 
 function Header() {
 
-  const [checked, setChecked] = useState('')
+  const [checked, setChecked] = useState('Home')
 
   const handleMenu = (item) =>{
     setChecked(item)
@@ -26,7 +26,7 @@ function Header() {
               key={item}
               onClick={() =>handleMenu(item)}
               className={checked===item?"active-menu":"none"}
-            >{item}</li>
+            ><a href={`#${item}`}>{item}</a></li>
           ))}
             {/* <li onClick={handleMenu} className={checked?"active-menu":"none"}>Home</li>
             <li onClick={handleMenu} className={checked?"active-menu":"none"}>Projects</li>

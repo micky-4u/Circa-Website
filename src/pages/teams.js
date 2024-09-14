@@ -49,7 +49,7 @@ function Teams() {
   ]
 
   return (
-    <div className='home'>
+    <div id="Team" className='teams'>
       <div className='overlay'>
             <img src={overlay} alt='overlay' />
         </div>

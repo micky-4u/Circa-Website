@@ -2,18 +2,20 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    position: absolute;
+    position: fixed;
     top: 0;
     width: 100%;
     z-index: 1;
     margin-top: 20px;
+    background: rgba(255,255,255,0.7);
+    margin: 0px;
 }
 
 .header ul{
     display: flex;
     width: 60%;
     gap: 40px;
-
+    
 }
 
 .header ul li{
@@ -21,8 +23,12 @@
     cursor: pointer;
     transition: 0.2s ease;
 }
-
-.header ul li:hover{
+.header ul li a{
+    text-decoration: none;
+    color: #000;
+    transition: all 0.2s ease;
+}
+.header ul li a:hover{
     color: #05cfde;
     transition: 0.3s ease;
 }
