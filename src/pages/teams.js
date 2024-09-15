@@ -1,6 +1,5 @@
 import React from 'react'
 import Member from '../components/member/member'
-import overlay from '../assets/images/overlay.png'
 
 import wiz from '../assets/images/wiz.png'
 import pat from '../assets/images/pat.png'
@@ -50,9 +49,6 @@ function Teams() {
 
   return (
     <section id="Team" className='teams'>
-      <div className='overlay'>
-            <img src={overlay} alt='overlay' />
-        </div>
 
       <div className='teammembers'>
 

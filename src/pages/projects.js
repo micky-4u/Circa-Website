@@ -1,21 +1,26 @@
 import React from 'react'
-import Button from '../components/button/button'
-import overlay from '../assets/images/overlay.png'
 
 
 function Projects() {
   return (
     <section id="Projects" className='home projects'>
-                <div className='overlay'>
-            <img src={overlay} alt='overlay' />
-        </div>
         <div className='content'>
             <h1>PROJECTS</h1>
 
-            <p>e-qual Cloud Distribution Software</p>
-            <p>Utilizing AI to connect business with other business and consumers</p>
+            <p>Utilizing AI to connect businesses with other businesses and consumers.</p>
+            <p>70% of businesses around the world cannot afford to operate online due to high costs and the need for technical expertise.</p>
+            <p>Say hello to the e-qual Enterprise Distribution Software.</p>
+            <p>Available on the Web and on Mobile.
+            An Inexpensive end-to-end distribution software for Businesses that enables businesses to handle in real-time:</p>
+
+            <p>-Orders
+            <br></br>-Fulfillment
+            <br></br>-Pickup and Delivery
+            <br></br>-Real-Time Payment Processing</p>
+
+            <p>The e-qual Enterprise Distribution Software comes with AI Analytics Tools for Businesses.</p>
+
         </div>
-        <Button label="EXPLORE  e-qual"/>
         
 
     </section>

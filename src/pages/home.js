@@ -1,5 +1,4 @@
 import React from 'react'
-import Button from '../components/button/button'
 import overlay from '../assets/images/overlay.png'
 function Home() {
   return (
@@ -13,11 +12,11 @@ function Home() {
             <p>Welcome to <span>circa</span></p>
             <p>We build AI products that advance our individual and collective human experience</p>
             <p>
-                We focus on 3 core ideas upon which we seek to make radical impact using AI in the coming years
+            We aim to leverage AI and other advancements in computing to build interconnected and interoperable software and hardware products that operate in synergy to make radical impacts towards solving the biggest problems such as :
+            Communicable and Terminal Diseases, Accidents, Famine, Poverty, Climate Crisis, Supply Chain Crisis, Education Crisis, Energy Crisis, Homelessness, Terrorism, Violent Crimes and the likes in Africa and other parts of the world.
             </p>
 
         </div>
-        <Button label="EXPLORE circa"/>
         
 
     </section>
