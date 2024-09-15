@@ -15,6 +15,10 @@ function Contact() {
             <div className='text-area'>
                 <textarea type='text'  placeholder='Message'/>
             </div>
+
+            <div>
+                <button>Send Message</button>
+            </div>
         </form>
 
     </section>
