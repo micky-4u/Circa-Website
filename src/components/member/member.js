@@ -1,5 +1,7 @@
 import React from 'react'
 import "./member.css"
+
+
 function Member(props) {
 
     const {name, role,image} = props;

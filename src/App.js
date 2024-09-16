@@ -5,8 +5,8 @@ import Teams from './pages/teams';
 import Header from './components/header/header';
 import Projects from './pages/projects';
 import Contact from './pages/contact';
-import Proimage from './pages/proimage';
-import Prophone from './pages/prophone';
+// import Proimage from './pages/proimage';
+// import Prophone from './pages/prophone';
 
 
 class App extends Component {
@@ -16,8 +16,6 @@ class App extends Component {
         <Header />
         <Home />
         <Projects />
-        <Proimage />
-        <Prophone />
         <Teams />
         <Contact />
       </div>

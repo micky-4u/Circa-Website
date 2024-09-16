@@ -45,7 +45,7 @@
 
 }
 
-.proimage, .overlay img{
+.proimage .overlay img{
     width: 90%;
     height: 90%;
     object-fit: contain;
@@ -55,15 +55,54 @@
     height: 1000px;
 }
 
-.home{
+.home {
     height: 100vh;
 
 }
 
+.projects .content{
+    margin-left: 10%;
+    align-items: flex-start;
+    margin-top: 10%;
+}   
+
 .projects{
-    height: 80vh;
+    height: 700px;
 
 }
+
+.projects .content p{
+    color: #fff;
+    font-size: 23px;
+    letter-spacing: 3px;
+    width: 50%;
+    text-align: left;
+
+}
+.projects .content span{
+    color: rgb(255,0,0);
+}
+
+.projects .content h1{
+    color: #fff;
+    
+}
+
+.projects .btn-nav{
+    background-color: #fff;
+    color: #000;
+    margin-left: 10%;
+}
+
+.projects .overlay{
+    background-color: #000;
+}
+.projects .overlay img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
 
 .contacts{
     height: 100vh;
@@ -84,19 +123,20 @@
     width: 150px;
     border: none;
     border-radius: 5px;
-    background-color: rgb(6, 163, 211);
+    background-color: #8069BF;
     color:#fff;
 }
 
 .contacts form .input-area{
     display: flex;
-    border: 1px solid #000;
+    border: none;
     width: 340px;
     height: 40px;
     border-radius: 5px;
     align-items: center;
     padding: 10px;
     gap: 10px;
+    background-color: rgba(255,255,255,0.5);
     
 }
 
@@ -104,8 +144,11 @@
     width: 340px;
     height: 100px;
     padding: 10px;
-    border: 1px solid #000;
+    border: none;
     border-radius: 5px;
+    background-color: rgba(255,255,255,0.5);
+    
+
 
     
 }
@@ -115,14 +158,19 @@
     height: 100%;
     width: 100%;
     border: none;
+    background-color: transparent;
+    color: #fff;
 
 }
 
 .contacts form .input-area input{
     outline: none;
     border: none;
+    background-color: transparent;
+    color: #fff;
+
 }
-.home .overlay{
+.home .overlay, .projects .overlay, .contacts .overlay{
     width: 100%;
     height: 100%;
     background-position: center;
@@ -137,26 +185,32 @@
     left:0;
 }
 
-.home .content{
+.home .content, .projects .content{
     display: flex;
     flex-direction: column;
+}
+.home .content{
     align-items: flex-start;
-    margin-left: 15%;
     height: 100%;
     justify-content: center;
+    margin-left: 15%;
+
 }
-.home .content h1{
-    font-weight: 300;
+.home .content h1, .projects .content h1{
+    font-weight: 400;
     font-size: 40px;
 }
 .home .content p{
-    width:80%;
+    width:52%;
     text-align: left;
     margin: 0px;
     margin-bottom: 20px;
     word-spacing: 10px;
 }
 
+.home .content span{
+    color: #8069BF;
+}
 
 
 /* teams page */
