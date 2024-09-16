@@ -56,7 +56,7 @@
 }
 
 .home {
-    height: 100vh;
+    height: 700px;
 
 }
 
@@ -92,6 +92,7 @@
     background-color: #fff;
     color: #000;
     margin-left: 10%;
+    cursor: pointer;
 }
 
 .projects .overlay{
@@ -105,7 +106,7 @@
 
 
 .contacts{
-    height: 100vh;
+    height: 700px;
     align-items: flex-start;
     justify-content: center;
 }
