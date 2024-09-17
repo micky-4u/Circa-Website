@@ -2,8 +2,9 @@ import React from 'react'
 import "./button.css"
 
 function Button(props) {
-
     const {label, color} = props
+
+    
   return (
     <div className='btn-nav'>
         <p>{label}</p>

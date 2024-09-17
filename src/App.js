@@ -1,24 +1,58 @@
 import React, { Component } from 'react';
+// import * as ReactDOM from "react-dom/client";
 import './App.css';
 import Home from './pages/home';
 import Teams from './pages/teams';
 import Header from './components/header/header';
 import Projects from './pages/projects';
 import Contact from './pages/contact';
-// import Proimage from './pages/proimage';
-// import Prophone from './pages/prophone';
+import Proimage from './pages/proimage';
+import Prophone from './pages/prophone';
+import Explore from './pages/explore';
+import {} from 'react-dom'
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
 
 
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element:       
+    <div className="App">
+    <Header />
+    <Home />
+    <Projects />
+    <Teams />
+    <Contact />
+  </div>
+
+  },
+  {
+    path:"/projects",
+    element: <div className="App">
+    <Header />
+    <Explore />
+    <Proimage />
+    <Prophone />
+  </div>
+  }
+]);
 class App extends Component {
+  
+
   render() {
     return (
-      <div className="App">
-        <Header />
-        <Home />
-        <Projects />
-        <Teams />
-        <Contact />
-      </div>
+      // <div className="App">
+      //   <Header />
+      //   <Home />
+      //   <Projects />
+      //   <Teams />
+      //   <Contact />
+      // </div>
+      <RouterProvider router={router} />
     );
   }
 }
