@@ -6,8 +6,6 @@ import Teams from './pages/teams';
 import Header from './components/header/header';
 import Projects from './pages/projects';
 import Contact from './pages/contact';
-import Proimage from './pages/proimage';
-import Prophone from './pages/prophone';
 import Explore from './pages/explore';
 import {} from 'react-dom'
 import {
@@ -35,8 +33,6 @@ const router = createBrowserRouter([
     element: <div className="App">
     <Header />
     <Explore />
-    <Proimage />
-    <Prophone />
   </div>
   }
 ]);

@@ -6,10 +6,11 @@ import Prophone from './prophone'
 
 function Explore() {
   return (
+    <>
     <div className='explore'>
                   {/* <div className='overlay'>
             <img src={overlay} alt='overlay' />
-        </div> */}
+            </div> */}
 
         <div className='content'>
             <h2>Utilizing AI to connect businesses with other businesses and consumers.</h2>
@@ -28,7 +29,11 @@ function Explore() {
             <p>The e-qual Enterprise Distribution Software comes with AI Analytics Tools for Businesses.</p>
 
         </div>
+
     </div>
+        <Proimage />
+        <Prophone />
+    </>
   )
 }
 

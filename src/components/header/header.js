@@ -2,6 +2,7 @@ import React from 'react'
 import { useState } from 'react'
 import "./header.css"
 import logo from "../../assets/images/logo.png"
+import { Link } from 'react-router-dom'
 
 
 function Header() {
@@ -16,9 +17,9 @@ function Header() {
   const items = ["Home","Projects","Team","Contact us"]
   return (
     <div className='header'>
-        <div className='logo-area'>
+        <Link to={"/"}className='logo-area'>
             <img src={logo} alt='logo1' />
-        </div>
+        </Link>
 
         <ul>
           {items.map((item)=>(

@@ -7,7 +7,7 @@ function Button(props) {
 
     
   return (
-    <Link to ={"projects"} className='btn-nav'>
+    <Link reloadDocument to ={"projects"} className='btn-nav'>
         <p>{label}</p>
         <box-icon name='right-arrow-alt' color={color} size="sm"></box-icon>
 
