@@ -120,6 +120,7 @@
     align-items: flex-start;
     margin-left: 15%;
     gap: 20px;
+    width: 100%;
 }
 
 .contacts form button{
@@ -257,4 +258,46 @@
     width: 100%;
     gap: 100px;
     position: absolute;
+}
+
+
+
+
+@media screen and (max-width:768px){
+    .home .content{
+        margin-top: 70px;
+    }
+    .home .content p, .projects .content p{
+        width: 100%;
+    }
+    .home .content h1, .projects .content h1{
+        font-size: 25px;
+        text-align: left;
+    }
+
+    .projects{
+        justify-content: center;
+        height: 500px;
+        width: 100%;
+    }
+
+    .teams{
+        height: 2312px;
+
+    }
+
+    .contacts{
+        height: 189px;
+        width: 100%;
+    }
+    
+    .contacts form{
+        height: 100%;
+        width: 80%;
+    }
+
+    .contacts form .input-area, .contacts form .text-area{
+        width: 80%;
+    }
+    
 }
