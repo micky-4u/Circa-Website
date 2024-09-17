@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 // import * as ReactDOM from "react-dom/client";
+
 import './App.css';
 import Home from './pages/home';
 import Teams from './pages/teams';
@@ -12,6 +13,7 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
+import { ScrollRestoration } from "react-router-dom";
 
 
 
@@ -20,6 +22,8 @@ const router = createBrowserRouter([
     path: "/",
     element:       
     <div className="App">
+    <ScrollRestoration />
+
     <Header />
     <Home />
     <Projects />
@@ -31,6 +35,7 @@ const router = createBrowserRouter([
   {
     path:"/projects",
     element: <div className="App">
+    <ScrollRestoration />
     <Header />
     <Explore />
   </div>

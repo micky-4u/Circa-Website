@@ -12,6 +12,8 @@ function Header() {
   const handleMenu = (item) =>{
     setChecked(item)
     
+
+    
   }
 
   const items = ["Home","Projects","Team","Contact us"]
@@ -26,8 +28,8 @@ function Header() {
             <li 
               key={item}
               onClick={() =>handleMenu(item)}
-              className={checked===item?"active-menu":"none"}
-            ><a href={`#${item}`}>{item}</a></li>
+              
+            ><a className={checked===item?"active":"inactive"} href={`#${item}`}>{item}</a></li>
           ))}
             {/* <li onClick={handleMenu} className={checked?"active-menu":"none"}>Home</li>
             <li onClick={handleMenu} className={checked?"active-menu":"none"}>Projects</li>

@@ -25,7 +25,6 @@
 }
 .header ul li a{
     text-decoration: none;
-    color: #000;
     transition: all 0.2s ease;
 }
 .header ul li a:hover{
@@ -50,6 +49,10 @@
     width: 100%;
 }
 
-.active-menu{
-    color: #05cfde;
+.active{
+    color: #0085dd;
+}
+
+.inactive{
+    color: #000;
 }
