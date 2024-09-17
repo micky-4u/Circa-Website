@@ -5,13 +5,47 @@ import logo from "../../assets/images/logo.png"
 import { Link } from 'react-router-dom'
 
 
+
 function Header() {
+  
+  const [checked, setChecked] = useState('')
 
-  const [checked, setChecked] = useState('Home')
+  window.onscroll =() =>{
+    console.log(window.scrollY)
+    
+    if(window.scrollY <779){
+      setChecked("Home")
+    }else if(window.scrollY >=780 && window.scrollY <=1466){
+      setChecked("Projects")
 
+    }else if(window.scrollY >=1465 && window.scrollY <=2645){
+      setChecked("Team")
+
+    }else{
+      setChecked("Contact us")
+    }
+    // switch(window.scrollY){
+    //   case 0:
+    //     setChecked("Home")
+    //     console.log(checked)
+    //     break;
+      
+    //   case 780:
+    //     setChecked("Projects")
+    //     console.log(checked)
+
+    //     break;
+      
+    //   case 1467:
+    //     setChecked("Team")
+    //     console.log(checked)
+
+    //     break;
+    // }
+  }
+  
   const handleMenu = (item) =>{
     setChecked(item)
-    
 
     
   }

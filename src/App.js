@@ -22,7 +22,6 @@ const router = createBrowserRouter([
     path: "/",
     element:       
     <div className="App">
-    <ScrollRestoration />
 
     <Header />
     <Home />
