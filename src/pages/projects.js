@@ -11,14 +11,14 @@ function Projects() {
         </div>
 
         <div className='content'>
-            <h1>PROJECTS</h1>
+            <h1>PROJECTS 1</h1>
 
             <p><span>e-qual Cloud Distribution Software.</span></p>
             <p>What if every business in the world could operate on the internet?</p>
 
 
         </div>
-        <Button label="Explore equal" color="#000" />
+        <Button id="btn" label="Explore equal" color="#000" />
 
     </section>
   )

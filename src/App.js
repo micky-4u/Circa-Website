@@ -23,7 +23,7 @@ const router = createBrowserRouter([
     element:       
     <div className="App">
 
-    <Header />
+    <Header menu="Home"/>
     <Home />
     <Projects />
     <Teams />
@@ -35,7 +35,7 @@ const router = createBrowserRouter([
     path:"/projects",
     element: <div className="App">
     <ScrollRestoration />
-    <Header />
+    <Header menu="Projects"/>
     <Explore />
   </div>
   }

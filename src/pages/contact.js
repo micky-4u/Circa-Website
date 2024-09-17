@@ -15,7 +15,7 @@ function Contact() {
             </div>
             <div className="input-area">
             <box-icon name='envelope' type='solid' color="#fff"></box-icon>
-                <input type='email' placeholder='Email'/>
+                <input type='email' placeholder='Email Address'/>
             </div>
             <div className='text-area'>
                 <textarea type='text'  placeholder='Message'/>

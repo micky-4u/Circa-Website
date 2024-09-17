@@ -6,12 +6,14 @@ import { Link } from 'react-router-dom'
 
 
 
-function Header() {
-  
-  const [checked, setChecked] = useState('')
+function Header(props) {
+  const {menu} = props;
+  const [checked, setChecked] = useState(menu)
 
   window.onscroll =() =>{
-    console.log(window.scrollY)
+    
+    if(menu != "Projects"){
+
     
     if(window.scrollY <779){
       setChecked("Home")
@@ -24,6 +26,8 @@ function Header() {
     }else{
       setChecked("Contact us")
     }
+
+  }
     // switch(window.scrollY){
     //   case 0:
     //     setChecked("Home")
@@ -63,7 +67,7 @@ function Header() {
               key={item}
               onClick={() =>handleMenu(item)}
               
-            ><a className={checked===item?"active":"inactive"} href={`#${item}`}>{item}</a></li>
+            ><a className={checked===item?"active":"inactive"} href={`#${item}`}>{item.toLocaleUpperCase()}</a></li>
           ))}
             {/* <li onClick={handleMenu} className={checked?"active-menu":"none"}>Home</li>
             <li onClick={handleMenu} className={checked?"active-menu":"none"}>Projects</li>
