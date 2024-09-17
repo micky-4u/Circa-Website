@@ -179,7 +179,7 @@
     z-index: -9999;
 }
 
-.home .overlay img{
+.home .overlay img, .contacts .overlay img{
     object-fit: contain;
     height: 100%;
     width: 100%;
