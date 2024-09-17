@@ -18,7 +18,7 @@ function Header() {
     }else if(window.scrollY >=780 && window.scrollY <=1466){
       setChecked("Projects")
 
-    }else if(window.scrollY >=1465 && window.scrollY <=2645){
+    }else if(window.scrollY >=1465 && window.scrollY <=2615){
       setChecked("Team")
 
     }else{
