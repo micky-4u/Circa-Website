@@ -263,7 +263,7 @@
 
 
 
-@media screen and (max-width:768px){
+/* @media screen and (max-width:768px){
     .home .content{
         margin-top: 70px;
     }
@@ -277,7 +277,7 @@
 
     .projects{
         justify-content: center;
-        height: 500px;
+        height: 570px;
         width: 100%;
     }
 
@@ -300,4 +300,4 @@
         width: 80%;
     }
     
-}
+} */
