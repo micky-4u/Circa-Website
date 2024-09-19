@@ -7,24 +7,29 @@ import { Link } from 'react-router-dom'
 
 
 function Header(props) {
-  const {menu} = props;
+  const {menu, color} = props;
   const [checked, setChecked] = useState(menu)
+  const [textcolor, setTextColor] = useState(color)
 
   window.onscroll =() =>{
     
     if(menu != "Projects"){
 
     
-    if(window.scrollY <779){
+    if(window.scrollY <759){
       setChecked("Home")
-    }else if(window.scrollY >=780 && window.scrollY <=1466){
+      setTextColor("inactive")
+    }else if(window.scrollY >=760 && window.scrollY <=1466){
       setChecked("Projects")
+      setTextColor("shade")
 
     }else if(window.scrollY >=1465 && window.scrollY <=2615){
       setChecked("Team")
+      setTextColor("inactive")
 
     }else{
       setChecked("Contact us")
+      setTextColor("shade")
     }
 
   }
@@ -67,7 +72,7 @@ function Header(props) {
               key={item}
               onClick={() =>handleMenu(item)}
               
-            ><a className={checked===item?"active":"inactive"} href={`#${item}`}>{item.toLocaleUpperCase()}</a></li>
+            ><a className={checked===item?"active":textcolor} href={`#${item}`}>{item.toLocaleUpperCase()}</a></li>
           ))}
             {/* <li onClick={handleMenu} className={checked?"active-menu":"none"}>Home</li>
             <li onClick={handleMenu} className={checked?"active-menu":"none"}>Projects</li>

@@ -11,7 +11,7 @@ function Member(props) {
             <img src={image} alt='member-img' />
         </div>
         <h3>{name}</h3>
-        <p>{role}</p>
+        <p>{role.toUpperCase()}</p>
     </div>
   )
 }

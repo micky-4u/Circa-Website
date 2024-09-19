@@ -35,7 +35,7 @@ const router = createBrowserRouter([
     path:"/projects",
     element: <div className="App">
     <ScrollRestoration />
-    <Header menu="Projects"/>
+    <Header color="inactive" menu="Projects"/>
     <Explore />
   </div>
   }

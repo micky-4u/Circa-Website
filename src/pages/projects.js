@@ -18,7 +18,7 @@ function Projects() {
 
 
         </div>
-        <Button id="btn" label="Explore equal" color="#000" />
+        <Button id="btn" label="Explore e-qual" color="#000" />
 
     </section>
   )
