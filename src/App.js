@@ -5,6 +5,8 @@ import './App.css';
 import Home from './pages/home';
 import Teams from './pages/teams';
 import Header from './components/header/header';
+import Header1 from './components/header1/header';
+
 import Projects from './pages/projects';
 import Contact from './pages/contact';
 import Explore from './pages/explore';
@@ -35,7 +37,7 @@ const router = createBrowserRouter([
     path:"/projects",
     element: <div className="App">
     <ScrollRestoration />
-    <Header color="inactive" menu="Projects"/>
+    <Header1 color="inactive" menu="Projects"/>
     <Explore />
   </div>
   }
