@@ -7,29 +7,36 @@ import { Link } from 'react-router-dom'
 
 
 function Header(props) {
-  const {menu, color} = props;
+  const {menu, color,background} = props;
   const [checked, setChecked] = useState(menu)
   const [textcolor, setTextColor] = useState(color)
+  const [bg, setBg] = useState(background)
 
   window.onscroll =() =>{
-    
+    console.log(scrollY)
     if(menu != "Projects"){
 
     
-    if(window.scrollY <759){
+    if(window.scrollY <749){
       setChecked("Home")
       setTextColor("inactive")
-    }else if(window.scrollY >=760 && window.scrollY <=1466){
+      setBg("whitebg")
+    }else if(window.scrollY >=750 && window.scrollY <=1499){
       setChecked("Projects")
       setTextColor("shade")
+      setBg("darkbg")
 
-    }else if(window.scrollY >=1465 && window.scrollY <=2615){
+    }else if(window.scrollY >=1500 && window.scrollY <=2549){
       setChecked("Team")
       setTextColor("inactive")
+      setBg("whitebg")
+
 
     }else{
       setChecked("Contact us")
       setTextColor("shade")
+      setBg("darkbg")
+
     }
 
   }
@@ -61,7 +68,7 @@ function Header(props) {
 
   const items = ["Home","Projects","Team","Contact us"]
   return (
-    <div className='header'>
+    <div className={`header ${bg}`}>
         <Link to={"/"}className='logo-area'>
             <img src={logo} alt='logo1' />
         </Link>

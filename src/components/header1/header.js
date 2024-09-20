@@ -7,9 +7,11 @@ import { Link } from 'react-router-dom'
 
 
 function Header1(props) {
-  const {menu, color} = props;
+  const {menu, color,background} = props;
   const [checked, setChecked] = useState(menu)
   const [textcolor, setTextColor] = useState(color)
+  const [bg, setBg] = useState(background)
+
 
   window.onscroll =() =>{
     
@@ -61,7 +63,7 @@ function Header1(props) {
 
   const items = ["Home","Projects","Team","Contact us"]
   return (
-    <div className='header'>
+    <div className={`header ${bg}`}>
         <Link to={"/"}className='logo-area'>
             <img src={logo} alt='logo1' />
         </Link>

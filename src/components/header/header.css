@@ -7,7 +7,6 @@
     width: 100%;
     z-index: 1;
     margin-top: 20px;
-    background: transparent;
     margin: 0px;
 }
 
@@ -39,12 +38,14 @@
 
 .header .user-reactions box-icon{
     cursor: pointer;
+    display: none;
 }
 
 .header .logo-area{
     position: relative;
     width: 200px;
     height: 40px;
+    margin-left: 8%;
 }
 
 .header .logo-area img{
@@ -62,6 +63,17 @@
 }
 .shade {
     color: #fff;
+}
+
+.darkbg{
+    background-color: rgba(0,0,0,0.9);
+    transition: 0.5s ease;
+}
+
+.whitebg{
+    background-color: #fff;
+    transition: 0.5s ease;
+    
 }
 /* @media screen and (max-width:768px) {
     .header{
