@@ -10,8 +10,7 @@ function Header(props) {
   const {menu, color,background} = props;
   const [checked, setChecked] = useState(menu)
   const [textcolor, setTextColor] = useState(color)
-  const [bg, setBg] = useState(background)
-
+  const [bg, setBg] = useState('')
   window.onscroll =() =>{
     console.log(scrollY)
     if(menu != "Projects"){
@@ -26,7 +25,7 @@ function Header(props) {
       setTextColor("shade")
       setBg("darkbg")
 
-    }else if(window.scrollY >=1500 && window.scrollY <=2549){
+    }else if(window.scrollY >=1500 && window.scrollY <=2409){
       setChecked("Team")
       setTextColor("inactive")
       setBg("whitebg")

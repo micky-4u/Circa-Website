@@ -5,7 +5,7 @@ import './App.css';
 import Home from './pages/home';
 import Teams from './pages/teams';
 import Header from './components/header/header';
-import Header1 from './components/header1/header';
+import Header1 from './components/header1/header1';
 
 import Projects from './pages/projects';
 import Contact from './pages/contact';

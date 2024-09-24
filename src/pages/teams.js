@@ -43,6 +43,11 @@ function Teams() {
       "name":"AGYEI-BOAKYE EMMANUEL",
       "role":"RESEARCH OFFICER",
       "image":emma
+    },
+    {
+      "name":"Richmond Manu Andoh",
+      "role":"Software engineer",
+      "image":emma
     }
   
   ]
@@ -53,7 +58,7 @@ function Teams() {
       <div className='teammembers'>
 
         {team_members.map((member) =>(
-          <Member name={member.name} role={member.role} image={member.image} />
+          <Member name={member.name.toUpperCase()} role={member.role.toUpperCase()} image={member.image} />
         ))}
       </div>
     </section>

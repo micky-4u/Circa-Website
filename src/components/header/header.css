@@ -45,7 +45,6 @@
     position: relative;
     width: 200px;
     height: 40px;
-    margin-left: 8%;
 }
 
 .header .logo-area img{
@@ -75,9 +74,13 @@
     transition: 0.5s ease;
     
 }
-/* @media screen and (max-width:768px) {
+
+
+@media (max-width:499px), (min-width:498px) and (max-width:500px) {
     .header{
         justify-content: flex-start;
+        background-color: #fff;
+        height: 70px;
     }
     .header ul{
         display: none;
@@ -85,4 +88,13 @@
     .header .user-reactions{
         display: none;
     }
-} */
+    .header .logo-area{
+        position: relative;
+        width: 100px;
+        height: 40px;
+        margin-left: 10px;
+    }
+    .header .logo-area{
+    }
+    
+}

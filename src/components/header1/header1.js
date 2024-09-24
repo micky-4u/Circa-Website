@@ -1,6 +1,6 @@
 import React from 'react'
 import { useState } from 'react'
-import "./header.css"
+import "./header1.css"
 import logo from "../../assets/images/logo.png"
 import { Link } from 'react-router-dom'
 
@@ -63,13 +63,13 @@ function Header1(props) {
 
   const items = ["Home","Projects","Team","Contact us"]
   return (
-    <div className={`header ${bg}`}>
-        <Link to={"/"}className='logo-area'>
+    <div className={`header1 ${bg}`}>
+        <Link to={"/"}className='logo-area1'>
             <img src={logo} alt='logo1' />
         </Link>
 
 
-        <div className='user-reactions'>
+        <div className='user-reactions1'>
             <box-icon type='logo' name='facebook-circle'></box-icon>
             <box-icon name='twitter' type='logo' ></box-icon>
             <box-icon name='instagram-alt' type='logo' ></box-icon>

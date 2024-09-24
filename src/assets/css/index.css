@@ -9,6 +9,7 @@
 }
 body{
     margin: 0px;
+    
 }
 
 .home, .projects, .teams, .contacts, .proimage, .prophone, .explore{
@@ -60,8 +61,8 @@ body{
 }
 
 .teams{
-    height: 1000px;
     margin-bottom: 50px;
+    position: relative;
 
 }
 
@@ -259,7 +260,9 @@ body{
     margin: 0px;
     width: 55%;
     word-spacing: 3px;
-    margin-bottom: 15px;
+    margin-bottom: 15px;       
+    height: 100%;
+    width: 80%;
 }
 
 /* teams page */
@@ -272,15 +275,21 @@ body{
     justify-content: center;
     width: 100%;
     gap: 100px;
-    position: absolute;
+}
+
+@media (min-width:498px) and (max-width:500px){
+    .teams{
+        height: 1800px;
+
+    }
+
 }
 
 
-
-
-/* @media screen and (max-width:768px){
+@media (max-width:768px){
     .home .content{
         margin-top: 70px;
+        margin-left: 10%;
     }
     .home .content p, .projects .content p{
         width: 100%;
@@ -297,22 +306,88 @@ body{
     }
 
     .teams{
-        height: 2312px;
+        overflow: visible;
 
     }
-
     .contacts{
-        height: 189px;
-        width: 100%;
+        height: 290px;
+        align-items: flex-start;
+        justify-content: center;
     }
     
-    .contacts form{
-        height: 100%;
-        width: 80%;
+    .contacts form {
+        width: 90%;
+        margin: 0px;
+        padding: 10px;
     }
+    .contacts .overlay img{
+        object-fit: cover;
+    }
+    
+    .contacts form button{
+        height: 30px;
+        width: 150px;
+        border: none;
+        border-radius: 5px;
+        background-color: #8069BF;
+        color:#fff;
+    }
+    
+    .contacts form .input-area{
+        display: flex;
+        border: none;
+        width: 100%;
+        height: 20px;
+        border-radius: 20px;
+        align-items: center;
+        padding: 10px;
+        padding-left: 30px;
+        gap: 10px;
+        background-color: rgba(255,255,255,0.2);
+        
+    }
+    
+    .contacts form .text-area{
+        width: 340px;
+        height: 30px;
+        padding: 10px;
+        padding-left: 30px;
+        border: none;
+        border-radius: 20px;
+        background-color: rgba(255,255,255,0.2);
+        
+    
+    
+        
+    }
+    
+    .contacts form .text-area textarea{
+        outline: none;
+        height: 100%;
+        width: 100%;
+        border: none;
+        background-color: transparent;
+        color: #fff;
+    
+    }
+    .contacts form .text-area textarea::placeholder{
+        color: #fff;
+    }
+    
+    .contacts form .input-area input{
+        outline: none;
+        border: none;
+        background-color: transparent;
+        color: #fff;
+    
+    }
+    .contacts form .input-area input::placeholder{
+        color: #fff;
+    }
+    
 
     .contacts form .input-area, .contacts form .text-area{
         width: 80%;
     }
     
-} */
+}
