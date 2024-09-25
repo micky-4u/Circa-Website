@@ -38,6 +38,10 @@ body{
     text-align: left;
 }
 
+.prophone .content div img{
+    display: none;
+}
+
 
 .prophone .overlay{
     position: absolute;
@@ -50,7 +54,6 @@ body{
 
 }
 .proimage{
-    height: 100vh;
 
 }
 
@@ -261,8 +264,7 @@ body{
     margin: 0px;
     width: 55%;
     word-spacing: 3px;
-    margin-bottom: 15px;       
-    height: 100%;
+    margin-bottom: 26px;       
     width: 80%;
 }
 
@@ -390,5 +392,57 @@ body{
     .contacts form .input-area, .contacts form .text-area{
         width: 80%;
     }
+
+    .explore {
+    }
+    .explore .content {
+        text-align: left;
+        margin-top: 100px;
+        margin-left: 20px;
+    }
     
+    .explore .content h2{
+        font-weight: 400;
+        color: #f00;
+        letter-spacing: 2px;
+        width: 90%;
+        word-spacing: 7px;
+        text-align: left;
+        margin-bottom: 40px;
+        font-size: 20px;
+    }
+    
+    .explore .content p{
+        margin: 0px;
+        width: 100%;
+        word-spacing: 3px;
+        margin-bottom: 28px;       
+    }
+    
+
+    .proimage{
+        margin-top: 80px;
+    
+    }
+    .prophone .content{
+        width: 90%;
+        display: flex;
+        gap: 40px;
+    }
+    .prophone .overlay{
+        display: none;
+    }
+    .prophone .content div{
+        width: 100%;
+    }
+    .prophone .content p{
+        width: 90%;
+    }
+
+    .prophone .content div img{
+        object-fit: contain;
+        display: block;
+        width: 80%;
+        height: 100%;
+    }
 }

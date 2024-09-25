@@ -40,6 +40,7 @@
 
 .header1 .user-reactions1 box-icon{
     cursor: pointer;
+    display: none;
 }
 
 .header1 .logo-area1{
