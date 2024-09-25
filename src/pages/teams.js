@@ -7,6 +7,8 @@ import jos from '../assets/images/jos.png'
 import mike from '../assets/images/mike.png'
 import sam from '../assets/images/sam.png'
 import emma from '../assets/images/emma.png'
+import nana from '../assets/images/nana.jpg'
+
 
 
 
@@ -47,7 +49,7 @@ function Teams() {
     {
       "name":"Richmond Manu Andoh",
       "role":"Software engineer",
-      "image":emma
+      "image":nana
     }
   
   ]

@@ -86,9 +86,9 @@ body{
 
 .projects .content p{
     color: #fff;
-    font-size: 23px;
+    font-size: 20px;
     letter-spacing: 3px;
-    width: 50%;
+    width: 54%;
     text-align: left;
 
 }
@@ -223,17 +223,18 @@ body{
 .home .content h1, .projects .content h1{
     font-weight: 300;
     margin-bottom: 50px;
-    font-size: 35px;
+    font-size: 32px;
     font-family: "Roboto Slab", serif;
 
 }
 .home .content p{
-    width:52%;
+    width:56%;
     text-align: left;
     margin: 0px;
     margin-bottom: 25px;
     word-spacing: 8px;
-    font-size: 18px;
+    line-height: 23px;
+    font-size: 16px;
 }
 
 .home .content span{
