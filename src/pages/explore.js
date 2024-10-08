@@ -15,7 +15,6 @@ function Explore() {
         <div className='content'>
             <h2>Utilizing AI to connect businesses with other businesses and consumers.</h2>
 
-            <p>Utilizing AI to connect businesses with other businesses and consumers.</p>
             <p>70% of businesses around the world cannot afford to operate online due to high costs and the need for technical expertise.</p>
             <p>Say hello to the e-qual Enterprise Distribution Software.</p>
             <p>Available on the Web and on Mobile.
