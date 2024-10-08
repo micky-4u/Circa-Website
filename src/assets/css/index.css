@@ -296,6 +296,7 @@ body{
     }
     .home .content p, .projects .content p{
         width: 100%;
+        font-size: 16px;
     }
     .home .content h1, .projects .content h1{
         font-size: 25px;
@@ -403,40 +404,41 @@ body{
     
     .explore .content h2{
         font-weight: 400;
-        color: #f00;
+        color: #000;
         letter-spacing: 2px;
         width: 90%;
         word-spacing: 7px;
         text-align: left;
         margin-bottom: 40px;
-        font-size: 20px;
+        font-size: 18px;
     }
     
     .explore .content p{
         margin: 0px;
         width: 100%;
         word-spacing: 3px;
-        margin-bottom: 28px;       
+        margin-bottom: 28px;   
+        font-size: 12px;    
     }
     
 
     .proimage{
-        margin-top: 80px;
     
     }
     .prophone .content{
         width: 90%;
         display: flex;
         gap: 40px;
+        flex-direction: row;
     }
     .prophone .overlay{
         display: none;
     }
     .prophone .content div{
-        width: 100%;
     }
     .prophone .content p{
-        width: 90%;
+        width: 30%;
+        font-size: 12px;
     }
 
     .prophone .content div img{
